@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMW Sports - Sua Loja de Esportes!</title>
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(to right, #007bff, #0056b3); /* Azul gradiente */
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #0056b3;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        /* Navegação */
+        nav {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            background: url('https://via.placeholder.com/1500x500/007bff/ffffff?text=ESPORTES+É+VIDA') no-repeat center center/cover; /* Imagem de fundo, você pode substituir */
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffc107; /* Amarelo vibrante */
+            color: #333;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #e0a800;
+            color: #fff;
+        }
+
+        /* Seção de Destaques */
+        .highlights {
+            padding: 40px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .highlights h3 {
+            font-size: 2.2em;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        .highlight-item {
+            display: inline-block;
+            width: 30%; /* Ajuste conforme necessário */
+            margin: 0 1.5%;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .highlight-item img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain; /* Para manter a proporção da imagem */
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .highlight-item h4 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .highlight-item p {
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .highlight-item {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>EMW Sports</h1>
+            <p>Seu destino para os melhores produtos esportivos!</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Liberte seu Potencial com a EMW Sports!</h2>
+            <p>Encontre equipamentos de alta performance para todos os esportes.</p>
+            <a href="#produtos" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="highlights container">
+        <h3>Nossos Destaques</h3>
+        <div class="highlight-item">
+            <img src="https://via.placeholder.com/300x200/ffc107/333333?text=Chuteira+Nike" alt="Chuteira Nike">
+            <h4>Chuteiras de Futebol</h4>
+            <p>Desempenho máximo em campo com as melhores marcas.</p>
+            <a href="#" class="btn" style="background: #007bff; color: #fff;">Comprar</a>
+        </div>
+        <div class="highlight-item">
+            <img src="https://via.placeholder.com/300x200/28a745/ffffff?text=Tenis+Corrida+Adidas" alt="Tênis de Corrida Adidas">
+            <h4>Tênis de Corrida</h4>
+            <p>Conforto e velocidade para suas corridas diárias.</p>
+            <a href="#" class="btn" style="background: #007bff; color: #fff;">Comprar</a>
+        </div>
+        <div class="highlight-item">
+            <img src="https://via.placeholder.com/300x200/17a2b8/ffffff?text=Camisa+Basquete+NBA" alt="Camisa de Basquete NBA">
+            <h4>Roupas Esportivas</h4>
+            <p>Estilo e conforto para dentro e fora das quadras.</p>
+            <a href="#" class="btn" style="background: #007bff; color: #fff;">Comprar</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container" style="padding: 40px 0; text-align: center;">
+        <h3>Sobre a EMW Sports</h3>
+        <p>A EMW Sports nasceu da paixão por esportes e do desejo de oferecer produtos de alta qualidade para atletas de todos os níveis. Acreditamos que o esporte transforma vidas e queremos fazer parte da sua jornada.</p>
+        <p>Nossa missão é inspirar e equipar você para superar seus limites e alcançar seus objetivos, com o melhor em tecnologia e design esportivo.</p>
+    </section>
+
+    <section id="contato" class="container" style="padding: 40px 0; text-align: center; background-color: #f9f9f9;">
+        <h3>Fale Conosco!</h3>
+        <p>Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+        <p>Email: <a href="mailto:contato@emwsports.com">contato@emwsports.com</a></p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Siga-nos nas redes sociais para ficar por dentro das novidades!</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 EMW Sports. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
